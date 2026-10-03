@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2d8a5e">
+    <meta name="description" content="Contact Ireneo Kunda Complex - Get in touch with us for inquiries, visits, and more information">
+    <title>Contact Us - Ireneo Kunda Complex</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="images/logo/logo.png" alt="Ireneo Kunda Complex Logo" class="logo-img" width="50" height="50" fetchpriority="high">
+                </a>
+                <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="profile.html">Profiles</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-info-block">
+                    <h2>Get In Touch</h2>
+                    <p>Feel free to reach out to us for any inquiries about admissions, programs, or general information about our school.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Location</h3>
+                                <p>Wau, South Sudan</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+211910185396">+211910185396</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p><a href="mailto:cletokunda@yahoo.com">cletokunda@yahoo.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock" aria-hidden="true"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Office Hours</h3>
+                                <p>Monday – Friday: 8:00 AM – 4:00 PM</p>
+                                <p>Saturday: 9:00 AM – 1:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h3>Follow Us</h3>
+                        <div class="social-links-large">
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-block">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required autocomplete="name" spellcheck="false">
+                            <span class="form-error">Please enter your name</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required autocomplete="email" inputmode="email" spellcheck="false">
+                            <span class="form-error">Please enter a valid email address</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel">
+                            <span class="form-error">Please enter a valid phone number</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject...</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="admissions">Admissions Information</option>
+                                <option value="programs">Programs and Curriculum</option>
+                                <option value="fees">Fees and Payment</option>
+                                <option value="visit">Schedule a Visit</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="form-error">Please select a subject</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                            <span class="form-error">Please enter your message</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                    <div id="contactFormMessage" class="form-message" aria-live="polite"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Us Section -->
+    <section class="visit-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Our School</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="visit-content">
+                <div class="visit-text">
+                    <h3>Schedule a Campus Tour</h3>
+                    <p>We welcome prospective students and their families to visit our campus and see firsthand what makes Ireneo Kunda Complex special. During your visit, you can:</p>
+                    <ul>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Tour our facilities</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Meet with our staff and teachers</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Observe classes in session</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Ask questions about our programs</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i> Discuss the admission process</li>
+                    </ul>
+                    <p><strong>To arrange a visit, please contact us in advance using the form above or call our office directly.</strong></p>
+                </div>
+                <div class="visit-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-school" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find Us</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="map-placeholder">
+                <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                <p>Ireneo Kunda Complex, Wau, South Sudan</p>
+                <p class="map-note">For detailed directions, please contact us or visit our office</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Ireneo Kunda Complex</h3>
+                    <p>Providing quality education in Wau, South Sudan since our establishment.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="profile.html">Leadership</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Wau, South Sudan</li>
+                        <li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+211910185396">+211910185396</a></li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:cletokunda@yahoo.com">cletokunda@yahoo.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 By George Faridu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

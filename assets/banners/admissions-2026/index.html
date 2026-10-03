@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ireneo Kunda Complex — Admissions Banners 2026/2027</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  :root{
+    --primary:#2d8a5e; --primary-dark:#1e6241; --primary-light:#40b97d; --primary-lighter:#6fcf97;
+    --secondary:#ff8c42; --secondary-light:#ffb87a; --accent:#4f46e5;
+    --text-dark:#1f2937; --text-light:#3d4454; --text-muted:#9ca3af;
+    --border:#e5e7eb;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:#f1f5f1;color:var(--text-dark);line-height:1.6}
+  .page-wrap{max-width:1180px;margin:0 auto;padding:32px 20px 60px}
+  .page-head{text-align:center;margin-bottom:36px}
+  .page-head h1{font-size:28px;letter-spacing:-0.5px}
+  .page-head h1 span{color:var(--primary)}
+  .page-head p{color:var(--text-light);max-width:720px;margin:8px auto 0;font-size:15px}
+  .meta-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+  .meta-pill{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;font-weight:700;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:#fff}
+  .meta-pill.green{background:var(--primary);color:#fff;border-color:var(--primary)}
+  .option{margin-top:40px;background:#fff;border-radius:16px;border:1px solid var(--border);box-shadow:0 8px 32px rgba(0,0,0,0.06);overflow:hidden}
+  .option-head{padding:20px 22px 16px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:start;border-bottom:1px solid #f0f0f0}
+  .option-head h2{font-size:17px}
+  .option-head h2 em{font-style:normal;color:var(--primary)}
+  .option-head .rationale{color:var(--text-light);font-size:13px;max-width:620px;margin-top:4px}
+  .badges{display:flex;gap:8px;flex-wrap:wrap}
+  .badge{font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:5px 9px;border-radius:999px;background:#f3faf6;color:var(--primary);border:1px solid #d1fae5}
+  .badge.dim{background:#f9fafb;color:var(--text-muted);border-color:var(--border)}
+  .banner-stage{padding:18px;background:#f9fafb;overflow-x:auto}
+  .banner-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px;display:flex;justify-content:space-between}
+  .banner-label span:last-child{font-weight:600;text-transform:none;letter-spacing:0}
+  /* scaled wrapper */
+  .scale-outer{width:100%;overflow:hidden;border-radius:12px;border:1px solid var(--border);background:#fff}
+  .scale-inner{transform-origin:top left}
+  /* shared banner base */
+  .banner{width:1920px;height:600px;position:relative;overflow:hidden;display:flex;flex-shrink:0}
+  /* size variants row */
+  .variants{padding:16px 18px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .variant{border:1px solid var(--border);border-radius:10px;overflow:hidden;background:#f9fafb}
+  .variant-head{font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-muted);padding:8px 10px;background:#fff;border-bottom:1px solid var(--border);display:flex;justify-content:space-between}
+  .variant-stage{padding:10px;display:flex;justify-content:center;overflow:hidden}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;transition:0.2s;min-height:44px}
+  .btn-primary{background:var(--primary);color:#fff;box-shadow:0 4px 14px rgba(45,138,94,0.25)}
+  .btn-primary:hover{background:var(--primary-dark);transform:translateY(-1px)}
+  .btn-ghost{background:#fff;color:var(--text-dark);border:1px solid var(--border)}
+  .btn-ghost:hover{border-color:var(--primary-light)}
+  .pill{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase}
+  /* ========== OPTION 1 : Minimalist + Bold Type ========== */
+  .b1{background:#ffffff;position:relative}
+  .b1::before{content:'';position:absolute;inset:0;background:
+    radial-gradient(circle at 1px 1px, rgba(45,138,94,0.08) 1px, transparent 0);
+    background-size:28px 28px;opacity:1}
+  .b1-blob{position:absolute;right:-120px;bottom:-220px;width:760px;height:760px;background:radial-gradient(circle at 35% 35%, #e8f5ee 0%, #d1fae5 38%, #a7f3d0 58%, transparent 72%);opacity:0.9;pointer-events:none}
+  .b1-arc{position:absolute;right:88px;top:34px;width:420px;height:420px;border:1px solid rgba(45,138,94,0.12);border-radius:50%}
+  .b1-arc2{position:absolute;right:108px;top:54px;width:380px;height:380px;border:1px solid rgba(45,138,94,0.08);border-radius:50%}
+  .b1-left{position:relative;z-index:2;width:58%;padding:52px 0 52px 72px;display:flex;flex-direction:column;justify-content:center}
+  .b1-topline{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .b1-logo{width:42px;height:42px;border-radius:10px;background:var(--primary);display:grid;place-items:center;color:#fff;font-weight:800;font-size:12px;letter-spacing:-0.5px;box-shadow:0 4px 12px rgba(45,138,94,0.25)}
+  .b1-brand{font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--primary)}
+  .b1-brand small{display:block;font-weight:600;letter-spacing:0.08em;color:var(--text-muted);margin-top:1px}
+  .b1-pill{background:#fff;border:1px solid #d1fae5;color:var(--primary);box-shadow:0 2px 10px rgba(45,138,94,0.06)}
+  .b1-pill i{color:var(--secondary)}
+  .b1 h2{font-size:78px;line-height:0.92;letter-spacing:-3px;font-weight:800;color:var(--text-dark);margin-top:10px}
+  .b1 h2 span{color:var(--primary);position:relative}
+  .b1 h2 span::after{content:'';position:absolute;left:0;right:0;bottom:8px;height:10px;background:rgba(255,140,66,0.18);z-index:-1;border-radius:4px}
+  .b1-sub{margin-top:16px;font-size:19px;color:var(--text-light);max-width:560px;line-height:1.45}
+  .b1-sub strong{color:var(--text-dark)}
+  .b1-meta{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+  .b1-meta span{font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:7px 11px;border-radius:999px;background:#f3faf6;border:1px solid #e5f5ec;color:var(--text-light)}
+  .b1-meta span i{color:var(--primary)}
+  .b1-ctas{margin-top:26px;display:flex;gap:12px;align-items:center}
+  .b1-note{margin-top:14px;font-size:12px;color:var(--text-muted);display:flex;gap:8px;align-items:center}
+  .b1-right{position:relative;z-index:2;width:42%;display:flex;align-items:center;justify-content:center;padding-right:52px}
+  .b1-cards{position:relative;width:380px;height:420px}
+  .b1-card{position:absolute;background:#fff;border:1px solid var(--border);border-radius:16px;box-shadow:0 12px 32px rgba(0,0,0,0.08);padding:18px}
+  .b1-card-a{width:220px;top:18px;left:18px;transform:rotate(-3deg)}
+  .b1-card-b{width:210px;bottom:34px;right:18px;transform:rotate(2.5deg);border-color:#d1fae5}
+  .b1-card-top{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;color:#fff;margin-bottom:12px}
+  .b1-card h4{font-size:14px;margin-bottom:4px}
+  .b1-card p{font-size:12px;color:var(--text-muted);line-height:1.5}
+  .b1-float{position:absolute;top:0;right:42px;background:var(--secondary);color:#fff;padding:8px 12px;border-radius:999px;font-size:11px;font-weight:800;letter-spacing:0.06em;box-shadow:0 6px 18px rgba(255,140,66,0.35);transform:rotate(3deg)}
+
+  /* ========== OPTION 2 : Gradient Mesh ========== */
+  .b2{background:#0f3d2a;position:relative;color:#fff}
+  .b2-mesh{position:absolute;inset:0;background:
+    radial-gradient(680px 420px at 18% 18%, rgba(111,207,151,0.9) 0%, transparent 60%),
+    radial-gradient(720px 520px at 88% 22%, rgba(255,140,66,0.95) 0%, transparent 58%),
+    radial-gradient(900px 600px at 62% 92%, rgba(64,185,125,0.9) 0%, transparent 62%),
+    radial-gradient(520px 380px at 42% 52%, rgba(79,70,229,0.35) 0%, transparent 62%),
+    linear-gradient(135deg, #1a6b46 0%, #2d8a5e 45%, #3fa87a 100%);
+    opacity:1}
+  .b2-grain{position:absolute;inset:0;opacity:0.07;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.4'/%3E%3C/svg%3E")}
+  .b2-year{position:absolute;right:28px;top:18px;font-size:220px;font-weight:800;letter-spacing:-12px;line-height:1;color:rgba(255,255,255,0.08);user-select:none}
+  .b2-content{position:relative;z-index:2;width:100%;display:flex;align-items:center;padding:0 72px;gap:48px}
+  .b2-left{flex:1}
+  .b2-topline{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+  .b2-logo{width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.2);backdrop-filter:blur(8px);display:grid;place-items:center;color:#fff;font-weight:800;font-size:11px}
+  .b2-kicker{padding:7px 12px;border-radius:999px;background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.22);backdrop-filter:blur(10px);font-size:12px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase}
+  .b2 h2{font-size:76px;line-height:0.9;letter-spacing:-3px;font-weight:800}
+  .b2 h2 em{font-style:normal;background:linear-gradient(135deg,#fff 30%,#ffddb3 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .b2-sub{margin-top:14px;font-size:19px;color:rgba(255,255,255,0.9);max-width:560px;line-height:1.45}
+  .b2-badges{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+  .b2-badges span{padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);backdrop-filter:blur(8px);font-size:12px;font-weight:700;letter-spacing:0.04em}
+  .b2-ctas{margin-top:24px;display:flex;gap:12px;align-items:center}
+  .btn-white{background:#fff;color:var(--primary-dark);box-shadow:0 8px 22px rgba(0,0,0,0.18)}
+  .btn-white:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(0,0,0,0.22)}
+  .btn-glass{border:1px solid rgba(255,255,255,0.28);color:#fff;background:rgba(255,255,255,0.1);backdrop-filter:blur(10px)}
+  .btn-glass:hover{background:rgba(255,255,255,0.16)}
+  .b2-right{width:440px;display:flex;align-items:center;justify-content:center}
+  .b2-stack{position:relative;width:360px;height:380px}
+  .b2-photo{position:absolute;inset:0;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,0.2);box-shadow:0 20px 50px rgba(0,0,0,0.25)}
+  .b2-photo-grid{width:100%;height:100%;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1.1fr 0.9fr;gap:2px;background:rgba(255,255,255,0.15)}
+  .b2-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:14px;text-align:center}
+  .b2-tile i{font-size:26px;margin-bottom:8px;opacity:0.95}
+  .b2-tile strong{font-size:13px;letter-spacing:0.04em}
+  .b2-tile span{font-size:11px;opacity:0.85;margin-top:2px}
+  .b2-stat{position:absolute;bottom:-12px;left:-18px;background:#fff;color:var(--text-dark);padding:12px 14px;border-radius:14px;box-shadow:0 12px 30px rgba(0,0,0,0.18);display:flex;gap:10px;align-items:center;min-width:210px}
+  .b2-stat i{width:36px;height:36px;border-radius:10px;background:var(--primary);color:#fff;display:grid;place-items:center}
+
+  /* ========== OPTION 3 : Glassmorphism ========== */
+  .b3{background:#0b2e1f;position:relative;color:#fff;isolation:isolate}
+  .b3-orbs{position:absolute;inset:0;overflow:hidden}
+  .b3-orb{position:absolute;border-radius:50%;filter:blur(28px);opacity:0.9}
+  .b3-orb1{width:720px;height:720px;left:-180px;top:-240px;background:radial-gradient(circle at 30% 30%, #40b97d 0%, #2d8a5e 45%, transparent 70%)}
+  .b3-orb2{width:560px;height:560px;right:-120px;top:-80px;background:radial-gradient(circle at 30% 30%, #ff8c42 0%, #ff6b35 45%, transparent 72%);opacity:0.85}
+  .b3-orb3{width:520px;height:520px;left:42%;bottom:-180px;background:radial-gradient(circle at 30% 30%, #6fcf97 0%, #4f46e5 55%, transparent 74%);opacity:0.45}
+  .b3-grid{position:absolute;inset:0;opacity:0.06;background:
+    linear-gradient(rgba(255,255,255,0.8) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.8) 1px, transparent 1px);
+    background-size:36px 36px}
+  .b3-content{position:relative;z-index:2;width:100%;display:flex;align-items:center;padding:0 72px;gap:40px}
+  .b3-left{flex:1;max-width:640px}
+  .b3-topline{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+  .b3-logo{width:40px;height:40px;border-radius:10px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.18);backdrop-filter:blur(10px);display:grid;place-items:center;color:#fff;font-weight:800;font-size:11px}
+  .b3-kicker{padding:6px 11px;border-radius:999px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.16);backdrop-filter:blur(10px);font-size:11px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase}
+  .b3 h2{font-size:74px;line-height:0.92;letter-spacing:-2.5px;font-weight:800}
+  .b3 h2 span{color:#b7ffdb}
+  .b3-sub{margin-top:14px;font-size:18px;color:rgba(255,255,255,0.88);line-height:1.5;max-width:560px}
+  .b3-points{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+  .b3-points span{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.14);backdrop-filter:blur(10px);font-size:12px;font-weight:700}
+  .b3-ctas{margin-top:24px;display:flex;gap:12px}
+  .b3-ctas .btn-primary{background:var(--secondary);box-shadow:0 8px 22px rgba(255,140,66,0.35)}
+  .b3-ctas .btn-primary:hover{background:#e67e2f}
+  .b3-right{width:520px;display:flex;align-items:center;justify-content:center}
+  .b3-glass{width:420px;background:rgba(255,255,255,0.1);backdrop-filter:blur(18px) saturate(1.2);-webkit-backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(255,255,255,0.18);border-radius:20px;box-shadow:0 20px 50px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.22);padding:20px;position:relative;overflow:hidden}
+  .b3-glass::before{content:'';position:absolute;inset:0;border-radius:20px;background:linear-gradient(135deg, rgba(255,255,255,0.14) 0%, transparent 55%);pointer-events:none}
+  .b3-glass-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+  .b3-glass-head strong{font-size:12px;letter-spacing:0.08em;text-transform:uppercase;opacity:0.9}
+  .b3-glass-head span{font-size:11px;padding:6px 10px;border-radius:999px;background:rgba(183,255,219,0.18);border:1px solid rgba(183,255,219,0.28);font-weight:800}
+  .b3-levels{display:grid;gap:10px}
+  .b3-level{display:flex;gap:12px;align-items:center;padding:12px 12px;border-radius:14px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12)}
+  .b3-level-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:#fff;flex-shrink:0}
+  .b3-level h4{font-size:14px;margin-bottom:2px}
+  .b3-level p{font-size:11px;opacity:0.8}
+  .b3-glass-foot{margin-top:14px;display:flex;justify-content:space-between;align-items:center;padding-top:14px;border-top:1px solid rgba(255,255,255,0.12);font-size:12px}
+  .b3-glass-foot strong{font-size:13px}
+
+  /* variant mini banners */
+  .mini{position:relative;overflow:hidden;border-radius:8px}
+  .spec{font-size:10px;color:var(--text-muted)}
+  @media(max-width:900px){
+    .variants{grid-template-columns:1fr}
+    .b1-left,.b2-left,.b3-left{padding:28px}
+    .b1 h2,.b2 h2,.b3 h2{font-size:44px}
+  }
+</style>
+</head>
+<body>
+<div class="page-wrap">
+  <div class="page-head">
+    <h1>Ireneo Kunda Complex <span>— Admissions 2026/2027</span> Banner Kit</h1>
+    <p>Three art-direction options for the full campaign kit. Each concept is built at <strong>1920×600</strong> (website hero) and adapts to Facebook cover, X header, Instagram post, and Google Display sizes — all in your brand palette <code>#2d8a5e</code> / <code>#ff8c42</code>.</p>
+    <div class="meta-row">
+      <span class="meta-pill green">3 concepts × 5 sizes</span>
+      <span class="meta-pill">Safe zone: central 75%</span>
+      <span class="meta-pill">CTA 44px+ · 4.5:1 contrast</span>
+      <span class="meta-pill">CSS-built · no external images</span>
+    </div>
+  </div>
+
+  <!-- ================= OPTION 1 ================= -->
+  <div class="option" id="opt1">
+    <div class="option-head">
+      <div>
+        <h2>Option A — <em>Minimalist + Bold Type</em></h2>
+        <p class="rationale">Clean, trustworthy, high-legibility. Big type does the work — ideal for parents scanning quickly. Generous whitespace + subtle dot grid signals academic clarity. Orange underline & pill add warmth without competing with the green primary.</p>
+      </div>
+      <div class="badges">
+        <span class="badge">Recommended for hero & print</span>
+        <span class="badge dim">2 fonts · 12% text ratio</span>
+      </div>
+    </div>
+    <div class="banner-stage">
+      <div class="banner-label"><span>Website Hero — 1920 × 600 · 3.2:1</span><span>assets/banners/admissions-2026/minimalist-1920x600.png</span></div>
+      <div class="scale-outer" style="height:300px">
+        <div class="scale-inner" style="transform:scale(0.5);width:1920px;height:600px">
+          <div class="banner b1">
+            <div class="b1-blob"></div><div class="b1-arc"></div><div class="b1-arc2"></div>
+            <div class="b1-left">
+              <div class="b1-topline">
+                <div class="b1-logo">IKC</div>
+                <div class="b1-brand">Ireneo Kunda Complex <small>Wau · South Sudan</small></div>
+                <span class="pill b1-pill"><i class="fa-solid fa-circle" style="font-size:7px"></i> Admissions Open 2026/2027</span>
+              </div>
+              <h2>Shape<br>Their<br><span>Future.</span></h2>
+              <p class="b1-sub"><strong>Nursery · Primary · Secondary</strong> — Quality education from the first day of school to graduation.</p>
+              <div class="b1-meta">
+                <span><i class="fa-solid fa-check"></i> Nursery (Ages 3–5)</span>
+                <span><i class="fa-solid fa-check"></i> Primary (P1–P8)</span>
+                <span><i class="fa-solid fa-check"></i> Secondary (S1–S4)</span>
+              </div>
+              <div class="b1-ctas">
+                <a class="btn btn-primary" href="admissions.html">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+                <a class="btn btn-ghost" href="about.html">Learn More</a>
+              </div>
+              <div class="b1-note"><i class="fa-regular fa-calendar"></i> Applications close 30 Aug 2026 · Limited places</div>
+            </div>
+            <div class="b1-right">
+              <div class="b1-cards">
+                <div class="b1-float"><i class="fa-solid fa-star"></i> Enroll Today</div>
+                <div class="b1-card b1-card-a">
+                  <div class="b1-card-top" style="background:var(--primary)"><i class="fa-solid fa-graduation-cap"></i></div>
+                  <h4>Why families choose IKC</h4>
+                  <p>Experienced teachers, safe campus, and a values-driven community since 2005.</p>
+                  <div style="margin-top:10px;display:flex;gap:6px"><span style="height:6px;flex:1;background:var(--primary);border-radius:999px"></span><span style="height:6px;flex:1;background:#e5f5ec;border-radius:999px"></span><span style="height:6px;flex:1;background:#e5f5ec;border-radius:999px"></span></div>
+                </div>
+                <div class="b1-card b1-card-b">
+                  <div class="b1-card-top" style="background:var(--secondary)"><i class="fa-solid fa-users"></i></div>
+                  <h4>Nursery → Secondary</h4>
+                  <p>One campus, one community — a continuous journey from age 3 to 18.</p>
+                  <div style="margin-top:12px;display:flex;align-items:center;gap:8px"><img src="" alt="" style="display:none"><div style="width:28px;height:28px;border-radius:50%;background:#f3faf6;border:1px solid var(--border);display:grid;place-items:center;font-size:10px">✓</div><span style="font-size:12px;font-weight:700">1,200+ students</span><span style="margin-left:auto;font-size:11px;color:var(--primary);font-weight:700">Explore →</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="variants">
+      <div class="variant">
+        <div class="variant-head"><span>X / Twitter Header — 1500 × 500</span><span class="spec">safe: 1260 × 330</span></div>
+        <div class="variant-stage"><div style="width:300px;height:100px;border-radius:8px;background:#fff;border:1px solid var(--border);display:flex;align-items:center;padding:10px 14px;gap:10px;overflow:hidden;position:relative"><div style="position:absolute;inset:0;background:radial-gradient(200px 120px at 85% 90%, #d1fae5 0%, transparent 70%)"></div><div style="position:relative"><div style="font-size:9px;font-weight:800;letter-spacing:0.08em;color:var(--primary);text-transform:uppercase">Admissions 2026/27</div><div style="font-size:16px;font-weight:800;letter-spacing:-0.8px;line-height:1">Shape Their <span style="color:var(--primary)">Future.</span></div><div style="font-size:8px;color:var(--text-muted)">Nursery · Primary · Secondary</div></div><span style="margin-left:auto;position:relative;background:var(--primary);color:#fff;padding:6px 10px;border-radius:999px;font-size:9px;font-weight:800">Apply Now →</span></div></div>
+      </div>
+      <div class="variant">
+        <div class="variant-head"><span>Instagram Post — 1080 × 1080</span><span class="spec">1:1 · story-ready</span></div>
+        <div class="variant-stage"><div style="width:180px;height:180px;border-radius:12px;background:#fff;border:1px solid var(--border);padding:12px;display:flex;flex-direction:column;position:relative;overflow:hidden"><div style="position:absolute;right:-20px;bottom:-20px;width:120px;height:120px;background:radial-gradient(circle,#d1fae5 0%, transparent 70%)"></div><div style="position:relative"><div style="font-size:7px;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--primary)">Admissions Open</div><div style="font-size:20px;font-weight:800;line-height:0.95;letter-spacing:-1px;margin-top:6px">Shape<br>Their<br><span style="color:var(--primary)">Future.</span></div><div style="font-size:8px;color:var(--text-muted);margin-top:6px">Nursery · Primary · Secondary<br>Wau, South Sudan</div><div style="margin-top:10px;background:var(--primary);color:#fff;display:inline-flex;padding:6px 10px;border-radius:999px;font-size:8px;font-weight:800">Apply Now →</div></div></div></div>
+      </div>
+      <div class="variant">
+        <div class="variant-head"><span>Facebook Cover — 820 × 312</span><span class="spec">820×312</span></div>
+        <div class="variant-stage"><div style="width:328px;height:125px;border-radius:8px;background:#fff;border:1px solid var(--border);display:flex;align-items:center;padding:12px 14px;gap:10px;position:relative;overflow:hidden"><div style="position:absolute;inset:0;background:radial-gradient(180px 100px at 88% 85%, #e8f5ee 0%, transparent 65%)"></div><div style="position:relative;flex:1"><div style="font-size:7px;font-weight:800;letter-spacing:0.08em;color:var(--primary)">ADMISSIONS 2026/2027</div><div style="font-size:17px;font-weight:800;letter-spacing:-0.8px">Shape Their <span style="color:var(--primary)">Future.</span></div><div style="font-size:8px;color:var(--text-light)">Quality education · Nursery to Secondary</div></div><span style="position:relative;background:var(--primary);color:#fff;padding:7px 12px;border-radius:999px;font-size:9px;font-weight:800;white-space:nowrap">Apply Now</span></div></div>
+      </div>
+      <div class="variant">
+        <div class="variant-head"><span>Google Display — 300 × 250 & 728 × 90</span><span class="spec">Med Rect + Leaderboard</span></div>
+        <div class="variant-stage" style="gap:10px;align-items:end">
+          <div style="width:120px;height:100px;border-radius:8px;background:var(--primary);color:#fff;padding:10px;display:flex;flex-direction:column;justify-content:space-between"><div style="font-size:7px;font-weight:800;letter-spacing:0.08em;opacity:0.9">ADMISSIONS OPEN</div><div style="font-size:15px;font-weight:800;line-height:0.95">Shape<br>Their<br>Future.</div><div style="background:#fff;color:var(--primary);padding:5px 8px;border-radius:999px;font-size:7px;font-weight:800;text-align:center">Apply Now →</div></div>
+          <div style="width:220px;height:54px;border-radius:8px;background:#fff;border:1px solid var(--border);display:flex;align-items:center;padding:0 10px;gap:8px"><div style="width:28px;height:28px;border-radius:7px;background:var(--primary);display:grid;place-items:center;color:#fff;font-size:9px;font-weight:800">IKC</div><div><div style="font-size:10px;font-weight:800">Admissions Open 2026/27</div><div style="font-size:7px;color:var(--text-muted)">Nursery · Primary · Secondary</div></div><span style="margin-left:auto;background:var(--primary);color:#fff;padding:6px 10px;border-radius:999px;font-size:7px;font-weight:800">Apply Now</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= OPTION 2 ================= -->
+  <div class="option" id="opt2">
+    <div class="option-head">
+      <div>
+        <h2>Option B — <em>Gradient Mesh</em></h2>
+        <p class="rationale">Energetic and modern — the mesh gradient blends your green into warm sunset orange for an "opportunity / sunrise" feeling. The ghosted <strong>2026</strong> and glass stat add depth without photos. Best for social virality and youth-facing campaigns.</p>
+      </div>
+      <div class="badges">
+        <span class="badge">Best for social & ads</span>
+        <span class="badge dim">4.6:1 on headline</span>
+      </div>
+    </div>
+    <div class="banner-stage">
+      <div class="banner-label"><span>Website Hero — 1920 × 600</span><span>gradient-1920x600.png</span></div>
+      <div class="scale-outer" style="height:300px">
+        <div class="scale-inner" style="transform:scale(0.5);width:1920px;height:600px">
+          <div class="banner b2">
+            <div class="b2-mesh"></div><div class="b2-grain"></div><div class="b2-year">2026</div>
+            <div class="b2-content">
+              <div class="b2-left">
+                <div class="b2-topline"><div class="b2-logo">IKC</div><span class="b2-kicker">Admissions Open · 2026/2027</span></div>
+                <h2>Every child<br><em>deserves</em><br>a great start.</h2>
+                <p class="b2-sub">Ireneo Kunda Complex — Nursery, Primary & Secondary in Wau. One campus, one community, from age 3 to graduation.</p>
+                <div class="b2-badges"><span><i class="fa-solid fa-seedling"></i> Nursery</span><span><i class="fa-solid fa-book-open"></i> Primary</span><span><i class="fa-solid fa-graduation-cap"></i> Secondary</span></div>
+                <div class="b2-ctas">
+                  <a class="btn btn-white" href="admissions.html">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="btn btn-glass" href="programs.html">Explore Programs</a>
+                </div>
+              </div>
+              <div class="b2-right">
+                <div class="b2-stack">
+                  <div class="b2-photo">
+                    <div class="b2-photo-grid">
+                      <div class="b2-tile" style="background:rgba(255,255,255,0.96);color:var(--primary-dark)"><i class="fa-solid fa-child-reaching"></i><strong>Nursery</strong><span>Ages 3–5 · Play & learn</span></div>
+                      <div class="b2-tile" style="background:rgba(255,255,255,0.88);color:var(--primary-dark)"><i class="fa-solid fa-pencil"></i><strong>Primary</strong><span>P1–P8 · Foundations</span></div>
+                      <div class="b2-tile" style="background:rgba(45,138,94,0.92);color:#fff"><i class="fa-solid fa-flask"></i><strong>Science Labs</strong><span>Hands-on learning</span></div>
+                      <div class="b2-tile" style="background:rgba(255,140,66,0.92);color:#fff"><i class="fa-solid fa-trophy"></i><strong>Sports & Arts</strong><span>Whole-child growth</span></div>
+                    </div>
+                  </div>
+                  <div class="b2-stat"><i class="fa-solid fa-users"></i><div><div style="font-size:11px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-muted)">Trusted by families</div><div style="font-size:15px;font-weight:800">1,200+ students · Wau</div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="variants">
+      <div class="variant"><div class="variant-head"><span>X Header — 1500 × 500</span><span class="spec">gradient</span></div><div class="variant-stage"><div style="width:300px;height:100px;border-radius:8px;overflow:hidden;position:relative;background:linear-gradient(135deg,#1a6b46,#ff8c42);display:flex;align-items:center;padding:12px;color:#fff"><span style="position:absolute;right:6px;top:2px;font-size:48px;font-weight:800;opacity:0.12">2026</span><div style="position:relative"><div style="font-size:7px;font-weight:800;letter-spacing:0.08em;opacity:0.9">ADMISSIONS OPEN</div><div style="font-size:14px;font-weight:800;line-height:1">Every child deserves<br>a great start.</div></div><span style="margin-left:auto;position:relative;background:#fff;color:var(--primary-dark);padding:6px 10px;border-radius:999px;font-size:8px;font-weight:800">Apply Now</span></div></div></div>
+      <div class="variant"><div class="variant-head"><span>Instagram — 1080 × 1080</span><span class="spec">1:1</span></div><div class="variant-stage"><div style="width:180px;height:180px;border-radius:12px;overflow:hidden;position:relative;background:linear-gradient(135deg,#1e6241 0%, #2d8a5e 40%, #ff8c42 100%);padding:14px;color:#fff;display:flex;flex-direction:column"><div style="font-size:7px;font-weight:800;letter-spacing:0.08em;opacity:0.9">ADMISSIONS 2026/2027</div><div style="font-size:22px;font-weight:800;line-height:0.9;margin-top:8px">Every<br>child<br>deserves<br><span style="color:#ffddb3">a great start.</span></div><div style="margin-top:auto;background:#fff;color:var(--primary-dark);padding:7px 10px;border-radius:999px;font-size:8px;font-weight:800;text-align:center">Apply Now →</div></div></div></div>
+    </div>
+  </div>
+
+  <!-- ================= OPTION 3 ================= -->
+  <div class="option" id="opt3">
+    <div class="option-head">
+      <div>
+        <h2>Option C — <em>Glassmorphism</em></h2>
+        <p class="rationale">Premium, contemporary, and parent-reassuring. Frosted-glass program cards float over blurred orbs — feels calm, organized, and "well-run." The orange CTA pops against deep green for the highest click intent.</p>
+      </div>
+      <div class="badges">
+        <span class="badge">Premium feel</span>
+        <span class="badge dim">Blur 18px · sat 1.2</span>
+      </div>
+    </div>
+    <div class="banner-stage">
+      <div class="banner-label"><span>Website Hero — 1920 × 600</span><span>glassmorphism-1920x600.png</span></div>
+      <div class="scale-outer" style="height:300px">
+        <div class="scale-inner" style="transform:scale(0.5);width:1920px;height:600px">
+          <div class="banner b3">
+            <div class="b3-orbs"><div class="b3-orb b3-orb1"></div><div class="b3-orb b3-orb2"></div><div class="b3-orb b3-orb3"></div></div><div class="b3-grid"></div>
+            <div class="b3-content">
+              <div class="b3-left">
+                <div class="b3-topline"><div class="b3-logo">IKC</div><span class="b3-kicker"><i class="fa-solid fa-sparkles"></i> Admissions Open · 2026/2027</span></div>
+                <h2>Learn.<br>Belong.<br><span>Become.</span></h2>
+                <p class="b3-sub">From first letters to final exams — Ireneo Kunda Complex nurtures every learner in a safe, values-driven campus in Wau.</p>
+                <div class="b3-points"><span><i class="fa-solid fa-shield-halved" style="color:#b7ffdb"></i> Safe campus</span><span><i class="fa-solid fa-heart" style="color:#ffb87a"></i> Values-driven</span><span><i class="fa-solid fa-chalkboard-user" style="color:#b7ffdb"></i> Expert teachers</span></div>
+                <div class="b3-ctas">
+                  <a class="btn btn-primary" href="admissions.html">Apply Now <i class="fa-solid fa-arrow-right"></i></a>
+                  <a class="btn btn-glass" href="contact.html" style="color:#fff">Visit Campus</a>
+                </div>
+              </div>
+              <div class="b3-right">
+                <div class="b3-glass">
+                  <div class="b3-glass-head"><strong>Three stages, one journey</strong><span>Age 3 → 18</span></div>
+                  <div class="b3-levels">
+                    <div class="b3-level"><div class="b3-level-icon" style="background:linear-gradient(135deg,#ff8c42,#ffb87a)"><i class="fa-solid fa-shapes"></i></div><div><h4>Nursery</h4><p>Ages 3–5 · Play, language & early numeracy</p></div><i class="fa-solid fa-arrow-right" style="margin-left:auto;opacity:0.5;font-size:11px"></i></div>
+                    <div class="b3-level"><div class="b3-level-icon" style="background:linear-gradient(135deg,#2d8a5e,#40b97d)"><i class="fa-solid fa-book"></i></div><div><h4>Primary</h4><p>P1–P8 · Literacy, science & character</p></div><i class="fa-solid fa-arrow-right" style="margin-left:auto;opacity:0.5;font-size:11px"></i></div>
+                    <div class="b3-level"><div class="b3-level-icon" style="background:linear-gradient(135deg,#4f46e5,#7c3aed)"><i class="fa-solid fa-graduation-cap"></i></div><div><h4>Secondary</h4><p>S1–S4 · Streams & university prep</p></div><i class="fa-solid fa-arrow-right" style="margin-left:auto;opacity:0.5;font-size:11px"></i></div>
+                  </div>
+                  <div class="b3-glass-foot"><span><i class="fa-regular fa-calendar"></i> Deadline 30 Aug 2026</span><strong>1,200+ families <span style="font-weight:600;opacity:0.8">· Wau</span></strong></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="variants">
+      <div class="variant"><div class="variant-head"><span>X Header — 1500 × 500</span><span class="spec">glass</span></div><div class="variant-stage"><div style="width:300px;height:100px;border-radius:8px;overflow:hidden;position:relative;background:#0b2e1f;display:flex;align-items:center;padding:10px;color:#fff"><div style="position:absolute;width:120px;height:120px;right:-10px;top:-30px;background:radial-gradient(circle,#ff8c42 0%, transparent 70%);filter:blur(12px);opacity:0.9"></div><div style="position:relative"><div style="font-size:7px;font-weight:800;letter-spacing:0.08em;opacity:0.8">ADMISSIONS 2026/27</div><div style="font-size:14px;font-weight:800;line-height:1">Learn. Belong. <span style="color:#b7ffdb">Become.</span></div></div><span style="margin-left:auto;position:relative;background:var(--secondary);color:#fff;padding:6px 10px;border-radius:999px;font-size:8px;font-weight:800">Apply Now</span></div></div></div>
+      <div class="variant"><div class="variant-head"><span>Instagram — 1080 × 1080</span><span class="spec">1:1</span></div><div class="variant-stage"><div style="width:180px;height:180px;border-radius:12px;overflow:hidden;position:relative;background:#0b2e1f;padding:14px;color:#fff;display:flex;flex-direction:column"><div style="position:absolute;width:160px;height:160px;right:-30px;top:-20px;background:radial-gradient(circle,#ff8c42 0%, transparent 70%);filter:blur(18px);opacity:0.85"></div><div style="position:relative"><div style="font-size:7px;font-weight:800;letter-spacing:0.08em;opacity:0.8">ADMISSIONS OPEN</div><div style="font-size:20px;font-weight:800;line-height:0.95;margin-top:8px">Learn.<br>Belong.<br><span style="color:#b7ffdb">Become.</span></div></div><div style="position:relative;margin-top:auto;background:rgba(255,255,255,0.12);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.18);border-radius:12px;padding:8px;display:flex;gap:6px"><span style="font-size:7px;background:rgba(255,255,255,0.14);padding:4px 6px;border-radius:999px">Nursery</span><span style="font-size:7px;background:rgba(255,255,255,0.14);padding:4px 6px;border-radius:999px">Primary</span><span style="font-size:7px;background:rgba(255,255,255,0.14);padding:4px 6px;border-radius:999px">Secondary</span></div></div></div></div>
+    </div>
+  </div>
+
+  <div style="margin-top:32px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:18px 20px;display:flex;gap:16px;align-items:start;flex-wrap:wrap">
+    <div style="flex:1;min-width:280px">
+      <h3 style="font-size:14px;margin-bottom:6px">Export & usage</h3>
+      <ul style="font-size:13px;color:var(--text-light);list-style:disc;padding-left:18px;line-height:1.7">
+        <li><strong>Files:</strong> <code>assets/banners/admissions-2026/index.html</code> — open in browser, screenshot at 1920×600 or print to PNG. Each banner is a pure HTML/CSS element (no image deps) so PNG export is pixel-perfect at any DPI.</li>
+        <li><strong>To export PNG:</strong> open this file in Chrome → DevTools → capture node screenshot on <code>.banner</code> (or use your OS screenshot at 100% zoom). For 300 DPI print, export at 2× and place with 3–5 mm bleed.</li>
+        <li><strong>Fonts:</strong> Segoe UI (system) — no webfont load; headline ≥74 px, body ≥18 px, CTA 44 px+.</li>
+        <li><strong>Accessibility:</strong> all headlines ≥4.5:1 contrast; CTA bottom-right on hero, centered on square/vertical; safe zone respected (critical copy inside central 70%).</li>
+      </ul>
+    </div>
+    <div style="background:#f9fafb;border:1px solid var(--border);border-radius:10px;padding:12px 14px;min-width:220px">
+      <div style="font-size:11px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px">Campaign folder</div>
+      <div style="font-family:ui-monospace,monospace;font-size:12px;line-height:1.8;color:var(--text-light)">
+        assets/banners/admissions-2026/<br>
+        ├─ index.html <span style="color:var(--primary)">← you are here</span><br>
+        ├─ minimalist-1920x600.png<br>
+        ├─ gradient-1920x600.png<br>
+        ├─ glassmorphism-1920x600.png<br>
+        ├─ minimalist-1500x500.png<br>
+        └─ … (all 5 sizes × 3 styles)
+      </div>
+    </div>
+  </div>
+
+  <p style="text-align:center;margin-top:18px;font-size:12px;color:var(--text-muted)">Built for Ireneo Kunda Complex · Wau, South Sudan · Brand: <span style="color:var(--primary);font-weight:700">#2d8a5e</span> · <span style="color:var(--secondary);font-weight:700">#ff8c42</span> · Segoe UI · All copy editable in HTML</p>
+</div>
+</body>
+</html>

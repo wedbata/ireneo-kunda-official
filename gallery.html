@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2d8a5e">
+    <meta name="description" content="Gallery - Ireneo Kunda Complex, Wau, South Sudan">
+    <title>Gallery - Ireneo Kunda Complex</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="images/logo/logo.png" alt="Ireneo Kunda Complex Logo" class="logo-img" width="50" height="50" fetchpriority="high">
+                </a>
+                <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="profile.html">Profiles</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Photo Gallery</h1>
+            <p>A glimpse into life at Ireneo Kunda Complex</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filter">
+        <div class="container">
+            <div class="filter-buttons" role="group" aria-label="Photo Categories">
+                <button class="filter-btn active" data-filter="all" aria-pressed="true">All Photos</button>
+                <button class="filter-btn" data-filter="campus" aria-pressed="false">Campus</button>
+                <button class="filter-btn" data-filter="classroom" aria-pressed="false">Classroom</button>
+                <button class="filter-btn" data-filter="activities" aria-pressed="false">Activities</button>
+                <button class="filter-btn" data-filter="events" aria-pressed="false">Events</button>
+                <button class="filter-btn" data-filter="sports" aria-pressed="false">Sports</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-section">
+        <div class="container">
+            <div id="galleryGrid" class="gallery-grid" aria-live="polite">
+                <!-- Photos loaded dynamically by js/main.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div id="galleryModal" class="gallery-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+        <button class="modal-close" aria-label="Close photo lightbox">&times;</button>
+        <img class="modal-content" id="modalImage" alt="Gallery preview image">
+        <div class="modal-caption" id="modalCaption" aria-live="polite"></div>
+        <button class="modal-nav modal-prev" aria-label="Previous photo"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+        <button class="modal-nav modal-next" aria-label="Next photo"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Ireneo Kunda Complex</h3>
+                    <p>Providing quality education in Wau, South Sudan since our establishment.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="profile.html">Leadership</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Wau, South Sudan</li>
+                        <li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+211910185396">+211910185396</a></li>
+                        <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:cletokunda@yahoo.com">cletokunda@yahoo.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 By George Faridu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

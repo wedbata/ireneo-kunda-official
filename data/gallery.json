@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "src": "images/gallery/campus-building.jpg",
+        "title": "School Main Building",
+        "category": "campus",
+        "description": "Our main school building housing classrooms and administrative offices"
+    },
+    {
+        "id": 2,
+        "src": "images/gallery/campus-assembly.jpg",
+        "title": "School Assembly",
+        "category": "campus",
+        "description": "Students gathering for school assembly"
+    },
+    {
+        "id": 3,
+        "src": "images/gallery/life-classroom.jpg",
+        "title": "Classroom Learning",
+        "category": "classroom",
+        "description": "Students engaged in interactive learning"
+    },
+    {
+        "id": 4,
+        "src": "images/gallery/students-group-1.jpg",
+        "title": "Student Group Activity",
+        "category": "activities",
+        "description": "Students expressing creativity through group activities"
+    },
+    {
+        "id": 5,
+        "src": "images/gallery/students-group-2.jpg",
+        "title": "Group Learning",
+        "category": "activities",
+        "description": "Students collaborating and learning together"
+    },
+    {
+        "id": 6,
+        "src": "images/gallery/hero-students.jpeg",
+        "title": "Student Portraits",
+        "category": "events",
+        "description": "Celebrating student achievements"
+    },
+    {
+        "id": 7,
+        "src": "images/gallery/leader-portrait.jpg",
+        "title": "School Leadership",
+        "category": "events",
+        "description": "School leadership and vision"
+    },
+    {
+        "id": 8,
+        "src": "images/gallery/life-sports.jpg",
+        "title": "Sports Activities",
+        "category": "sports",
+        "description": "Students competing in sports and athletics"
+    }
+]
