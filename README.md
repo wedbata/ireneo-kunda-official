@@ -40,8 +40,8 @@ ireneo-kunda-website/
 
 ## 👥 Leadership Profiles
 
-- **Eng. Ireneo Kunda Tabour**: Founder & Patron
-- **Dr. Cleto I. Kunda Tabour**: Principal & Managing Director
+- **Late. Eng. Ireneo Kunda Tabour**: Founder & Patron
+- **Mr. Cleto I. Kunda Tabour**: Principal & Managing Director
 - **Mr. Simon Luciano**: Head Teacher — Secondary School
 - **Adiama Andrea**: Head Teacher — Primary School
 - **Mrs. Janet Edward**: Head Teacher — Nursery School
