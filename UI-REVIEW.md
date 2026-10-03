@@ -66,7 +66,7 @@
   - `index.html:97-100`: "About Preview" uses `<div class="image-placeholder"><i class="fas fa-school"></i></div>`.
   - `about.html:1-230`: The dedicated About page contains no campus photos, faculty images, or classroom visuals.
   - `contact.html:178-180`: "Visit Our School" uses an empty gradient icon box instead of real school grounds photography.
-  - `contact.html:193-198`: "Find Us" renders a static icon gradient (`.map-placeholder`) without street context or interactive map tiles.
+  - ~~`contact.html:193-198`: "Find Us" renders a static icon gradient (`.map-placeholder`) without street context or interactive map tiles.~~ **RESOLVED:** "Find Us" now embeds an interactive Google Map (`.map-embed`) with a "Get Directions" button.
   - *Recommendation:* Utilize the existing images in `images/gallery/` (such as `campus-building.jpg`, `campus-assembly.jpg`, `students-group-1.jpg`) on the Home, About, and Contact pages.
 
 - **[WARNING] Competing visual hierarchy in Hero CTAs:**
