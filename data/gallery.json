@@ -54,5 +54,124 @@
         "title": "Sports Activities",
         "category": "sports",
         "description": "Students competing in sports and athletics"
+    },
+    {
+        "id": 9,
+        "src": "images/gallery/event (2).jpeg",
+        "title": "School Event Highlights",
+        "category": "events",
+        "description": "Highlights from school events and celebrations"
+    },
+    {
+        "id": 10,
+        "src": "images/gallery/event (6).jpeg",
+        "title": "Event Gathering",
+        "category": "events",
+        "description": "Students and staff gathering at school events"
+    },
+    {
+        "id": 11,
+        "src": "images/gallery/event_(1).jpeg_20261011092215.jpg",
+        "title": "Special Occasion",
+        "category": "events",
+        "description": "Capturing special school occasions"
+    },
+    {
+        "id": 12,
+        "src": "images/gallery/event_(3).jpeg_20261011094355.jpg",
+        "title": "Event Celebration",
+        "category": "events",
+        "description": "Students and staff celebrating together"
+    },
+    {
+        "id": 13,
+        "src": "images/gallery/event_(4).jpeg_20261011094105.jpg",
+        "title": "Community Event",
+        "category": "events",
+        "description": "Community engagement at school events"
+    },
+    {
+        "id": 14,
+        "src": "images/gallery/event_(5).jpeg_20261011094657.jpg",
+        "title": "Annual Event",
+        "category": "events",
+        "description": "Annual event highlights"
+    },
+    {
+        "id": 15,
+        "src": "images/gallery/sports (3).jpeg",
+        "title": "Sports Competition",
+        "category": "sports",
+        "description": "Athletes in action during competition"
+    },
+    {
+        "id": 16,
+        "src": "images/gallery/sports (4).jpeg",
+        "title": "Sports Day",
+        "category": "sports",
+        "description": "Students showcasing athletic skills on sports day"
+    },
+    {
+        "id": 17,
+        "src": "images/gallery/sports (6).jpeg",
+        "title": "Team Sports",
+        "category": "sports",
+        "description": "Team spirit and athletic competition"
+    },
+    {
+        "id": 18,
+        "src": "images/gallery/sports (8).jpeg",
+        "title": "Athletic Meet",
+        "category": "sports",
+        "description": "Annual athletic meet highlights"
+    },
+    {
+        "id": 19,
+        "src": "images/gallery/sports (9).jpeg",
+        "title": "Sports Excellence",
+        "category": "sports",
+        "description": "Excellence in school athletics"
+    },
+    {
+        "id": 20,
+        "src": "images/gallery/sports_(1).jpeg_20261011095653.jpg",
+        "title": "Sports Practice",
+        "category": "sports",
+        "description": "Students practicing sports"
+    },
+    {
+        "id": 21,
+        "src": "images/gallery/sports_(4).jpeg_20261011095348.jpg",
+        "title": "Athletic Training",
+        "category": "sports",
+        "description": "Training for athletic success"
+    },
+    {
+        "id": 22,
+        "src": "images/gallery/sports_(7).jpeg_20261011100136.jpg",
+        "title": "Sports Achievement",
+        "category": "sports",
+        "description": "Achieving goals in school sports"
+    },
+    {
+        "id": 23,
+        "src": "images/gallery/activet (1).jpeg",
+        "title": "Student Activity",
+        "category": "activities",
+        "description": "Engaging student activities"
+    },
+    {
+        "id": 24,
+        "src": "images/gallery/activet (2).jpeg",
+        "title": "Creative Activity",
+        "category": "activities",
+        "description": "Creative expression through student activities"
+    },
+    {
+        "id": 25,
+        "src": "images/gallery/activet_(1).jpeg_20261011100005.jpg",
+        "title": "Activity Session",
+        "category": "activities",
+        "description": "Hands-on student activity session"
     }
 ]
