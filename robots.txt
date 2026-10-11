@@ -1,0 +1,8 @@
+# Robots.txt for Ireneo Kunda Complex school website
+# https://ireneokundacomplex.org/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://ireneokundacomplex.org/sitemap.xml
