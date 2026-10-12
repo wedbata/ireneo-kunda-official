@@ -207,7 +207,20 @@
                 <p>Complete this form to start the admission process</p>
             </div>
 
-            <form id="applicationForm" class="application-form" novalidate>
+            <div style="background: #d1ecf1; border: 1px solid #17a2b8; border-radius: 8px; padding: 16px 20px; margin-bottom: 30px;">
+                <p style="margin: 0; color: #0c5460; font-size: 14px;">
+                    <i class="fas fa-info-circle" aria-hidden="true"></i> Submit this form online to apply. Your application is sent directly to our admissions office, and you will receive an email confirmation.
+                </p>
+            </div>
+
+            <form id="applicationForm" class="application-form" action="https://formsubmit.co/cletokunda@yahoo.com" method="POST" novalidate>
+                <!-- FormSubmit.co configuration -->
+                <input type="hidden" name="_subject" value="New Admissions Application - Ireneo Kunda Complex school">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="true">
+                <input type="hidden" name="_autoresponse" value="Thank you for applying to Ireneo Kunda Complex school. We have received your application and will contact you within 5-7 working days to confirm receipt and provide next steps. For urgent enquiries, call +211925353345.">
+                <!-- Honeypot spam protection -->
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                 <div class="form-section">
                     <h3>Student Information</h3>
                     <div class="form-grid">

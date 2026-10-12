@@ -549,20 +549,57 @@
                 const data = Object.fromEntries(formData.entries());
                 console.log('Admissions Application Submitted:', data);
 
-                showFormMessage(
-                    formMessage,
-                    '✓ Thank you for your application! We will contact you within 5-7 working days to confirm receipt and provide next steps.',
-                    'success'
-                );
+                // Disable the submit button and show a sending state
+                const submitBtn = applicationForm.querySelector('button[type="submit"]');
+                const originalBtnText = submitBtn ? submitBtn.textContent : null;
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Sending…';
+                }
 
-                setTimeout(() => {
-                    applicationForm.reset();
-                    formInputs.forEach(input => {
-                        const group = input.closest('.form-group');
-                        if (group) group.classList.remove('error', 'success');
+                // Send via FormSubmit AJAX so the user stays on the page
+                fetch('https://formsubmit.co/ajax/cletokunda@yahoo.com', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                })
+                    .then(function (response) {
+                        if (response.ok) {
+                            showFormMessage(
+                                formMessage,
+                                '✓ Thank you! Your application has been sent. We will contact you within 5-7 working days. Please check your email for a confirmation.',
+                                'success'
+                            );
+                            applicationForm.reset();
+                            formInputs.forEach(input => {
+                                const group = input.closest('.form-group');
+                                if (group) group.classList.remove('error', 'success');
+                            });
+                        } else {
+                            return response.json().then(function (err) {
+                                throw new Error(err.message || 'Form submission failed');
+                            }).catch(function () {
+                                throw new Error('Form submission failed (status ' + response.status + ')');
+                            });
+                        }
+                    })
+                    .catch(function (error) {
+                        console.error('FormSubmit error:', error);
+                        showFormMessage(
+                            formMessage,
+                            '✗ Sorry, we could not send your application right now. Please try again, or contact us directly at +211925353345.',
+                            'error'
+                        );
+                    })
+                    .finally(function () {
+                        if (submitBtn) {
+                            submitBtn.disabled = false;
+                            submitBtn.textContent = originalBtnText;
+                        }
                     });
-                    if (formMessage) formMessage.style.display = 'none';
-                }, 5000);
             });
         }
     }
