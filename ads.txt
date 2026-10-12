@@ -1,0 +1,15 @@
+# ads.txt — Authorised Digital Sellers for AdSense compliance
+#
+# Place this file at the root of your domain (e.g. https://example.com/ads.txt)
+# It is REQUIRED by Google AdSense. Without it, ads may not serve on your site.
+#
+# Format: <ad system domain>, <publisher account ID>, <relationship>, <cert authority id>
+#
+# Replace "pub-XXXXXXXXXXXXXXXX" below with your real AdSense Publisher ID
+# (find it in AdSense account → Account → Account information).
+#
+# Examples:
+#   google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0
+#   google.com, pub-1234567890123456, RESELLER, f08c47fec0942fa0
+
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
