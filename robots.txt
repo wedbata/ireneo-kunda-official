@@ -1,0 +1,23 @@
+# robots.txt — Ireneo Kunda Complex school
+# https://ireneokundaschool.site/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /css/
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Reference to sitemap
+Sitemap: https://ireneokundaschool.site/sitemap.xml
+
+# AI / common bots — same rules, allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /

@@ -2349,3 +2349,13 @@ p {
         text-align: center;
     }
 }
+
+/* ==========================================
+   16. HIDDEN PLATFORM UI
+   ========================================== */
+/* Hide the "Created by MiniMax Agent" floating badge injected by the hosting platform.
+   Not part of our source — purely a host-injected element. */
+#minimax-floating-ball,
+[class*="minimax-"] {
+    display: none !important;
+}
