@@ -133,6 +133,7 @@ body {
     line-height: 1.6;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
+    padding-top: 76px;
 }
 
 :focus-visible {
@@ -319,8 +320,10 @@ p {
 .navbar {
     background-color: var(--bg-white);
     box-shadow: var(--shadow-sm);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 1000;
     transition: var(--transition-normal);
     border-bottom: 1px solid var(--border-color);
@@ -363,7 +366,7 @@ p {
 
 .nav-menu {
     display: flex;
-    gap: var(--spacing-md);
+    gap: 0.35rem;
     align-items: center;
     flex: 1;
 }
@@ -375,12 +378,13 @@ p {
 .nav-menu a {
     color: var(--text-dark);
     font-weight: 500;
-    padding: 0.6rem 1rem;
+    padding: 0.4rem 0.5rem;
     border-radius: var(--radius-sm);
     transition: var(--transition-fast);
     position: relative;
     display: block;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
 }
 
 .nav-menu a::after {
@@ -2087,7 +2091,7 @@ p {
 
     .nav-menu {
         position: fixed;
-        top: 65px;
+        top: 68px;
         left: -100%;
         width: 100%;
         background-color: var(--bg-white);
